@@ -1,9 +1,9 @@
-# Module-1 Week-2.5+3 (C and Assembly)
+# Module-1 Week-2.5+4 (C and Assembly)
 
 Welcome to the last week of Module-1 of YoS!! <br>
 We will study **C programming** and **x86 assembly** for this week (and a half). <br>
 
-**C** is a general-purpose programming language like **Python**. **C** is a compiled language, unlike Python which is interpreted.
+**C** is a general-purpose programming language like **Python**. **C** is compiled language, unlike Python, which is interpreted.
 The difference between compiled and interpreted languages is in their methods of execution. <br>
 <br>
 First, a bit of background... <br>
@@ -17,7 +17,7 @@ As an aside, an **ELF** file essentially only stores these machine instructions 
 Coming back to the point, to do this translation from programming language to machine instructions, we use **compilers** and **interpreters**. 
 **Compilers** take a whole program as input and translate it to an executable binary code. The compilation step is required only once. Afterwards, we can run the binary code any number of times. **Interpreters** read and execute the program at hand instruction by instruction. After being read, each instruction is translated into the machine's binary code and run. Unlike compilers, the interpreters do not produce a binary executable file. Each time we run a program, we invoke the interpreter. It then reads and executes the program one instruction at a time. <br>
 <br>
-C is one of the earliest programming languages but is still in use till day. As we have already seen in the previous weeks, Linux and Python were both written in C! This makes learning C all the more worthwile. Also, C provides constructs that map directly to machine instructions which is why it is better to learn C alongside Assembly. <br>
+C is one of the earliest programming languages but is still in use today. As we have seen in the previous weeks, Linux and Python were both written in C! This makes learning C worthwhile. Also, C provides constructs that map directly to machine instructions, so it is better to learn C alongside Assembly. <br>
 
 <p align="center">
   <img src="https://i.postimg.cc/hcDmyCZF/Screenshot-from-2022-03-01-12-14-32.png" alt="drawing" width="800"/> <br>
@@ -25,10 +25,9 @@ C is one of the earliest programming languages but is still in use till day. As 
 </p>
 
 ```
-NOTE : You are not expected to understand all the details of Assembly. We have
-       2 modules (Reverse Enginnering and Binary Exploitation) which will deal
-       with them in greater depth. This week's content is just aimed at giving
-       you a taste of what's comping up next.
+NOTE : We do not expect you to understand all the details of Assembly. We have two modules
+       [Reverse Engineering and Binary Exploitation] to deal with them in greater depth.
+       This week's content aims to teach you just the very basics.
 ```
 
 ### Introductory Videos

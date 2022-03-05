@@ -25,24 +25,24 @@ C is one of the earliest programming languages but is still in use today. As we 
 </p>
 
 ```
-NOTE : We do not expect you to understand all the details of Assembly. We have two modules
-       [Reverse Engineering and Binary Exploitation] to deal with them in greater depth.
-       This week's content aims to teach you just the very basics.
+NOTE : Do not worry if you don't to understand all the details of C and Assembly. A full 
+       understanding is very difficult to achieve in a week and an half. We have two 
+       modules [Reverse Engineering and Binary Exploitation] coming up later which will
+       deal with these topics again and you will surely have a clearer understanding by
+       then. This week's content aims to teach you just the very basics.
 ```
 
 ### Introductory Videos
 #### C programming
-1. [Hello World!](https://www.youtube.com/watch?v=BuiX6vsiEfo) [9 mins]
-2. [Variables, Expressions, Statements](https://www.youtube.com/watch?v=Rwtsx0BfLxk) [7 mins]
-3. [Printing on the screen](https://www.youtube.com/watch?v=tPlT9mg7bkw) | [Taking input from user](https://www.youtube.com/watch?v=EA8K2d3USDc) [6+6 mins]
-4. [Strings](https://www.youtube.com/watch?v=qarhSok42Ms) [8 mins]
-5. [Arithmetic Operations](https://www.youtube.com/watch?v=dJWewDL9jSY) [5 mins]
-6. Data Types : [Part 1: Intro](https://www.youtube.com/watch?v=TnYCHohAMS8) | [Part 2: Intro](https://www.youtube.com/watch?v=hZ8aaWpPkD8) | [Part 3: int, double, float](https://www.youtube.com/watch?v=heULTdxf_yQ) | [Part 4: char](https://www.youtube.com/watch?v=_IERzjk4VQY) | [Part 5: bool](https://www.youtube.com/watch?v=AmaZy1xNe40) [25 mins] <br> add more...
-1. [CS50 - Intro to C](https://www.youtube.com/watch?v=Na2wiHOnzXU) [2 hrs]
+You may choose to watch videos in the crash course playlist or the CS50 videos (longer in duration, but each subtopic is elaborated on and filled with relevant examples) <br>
+
+Crash Course:
+1. [Introduction to C playlist](https://www.youtube.com/playlist?list=PLqKPIxArfSTy2s40UuN6lKbfDZ4xmt-9W) [3 hr 45 mins]
+
+CS50 Introduction to C:
+1. [CS50 - Intro to C](https://www.youtube.com/watch?v=Na2wiHOnzXU) [2 hrs 30 mins]
 2. [CS50 - Arrays](https://www.youtube.com/watch?v=xC3BZa1pcsY) [2 hrs]
-3. [CS50 - Pointers and Memory](https://www.youtube.com/watch?v=l-dHFS_Pnzc) [2 hrs]
-8. [Pointers](https://www.youtube.com/watch?v=egRIkkBEttg) [8 mins]
-9. [Arrays](https://www.youtube.com/watch?v=wbSj-Hq_b9s) [10 mins]
+3. [CS50 - Pointers and Memory](https://www.youtube.com/watch?v=l-dHFS_Pnzc) [2 hrs 25 mins]
 
 #### Assembly
 1. [x86 Assembly: Hello World!](https://www.youtube.com/watch?v=HgEGAaYdABA) [14 mins]
@@ -51,4 +51,10 @@ NOTE : We do not expect you to understand all the details of Assembly. We have t
 
 ### Text Stuff
 1. [Basics of C](http://www.cburch.com/books/cpy/index.html)
-2.
+2. [x86 guide](https://www.cs.virginia.edu/~evans/cs216/guides/x86.html)
+
+### CTF Challenge Walkthroughs
+1. [picoCTF - Flag Shop](https://www.youtube.com/watch?v=F5J6MG0mD-A) [15 mins]
+2. [247 CTF - Impossible Number](https://www.youtube.com/watch?v=rFlEf2RrEtI) [4 min]
+3. [picoCTF - Assembly 1](https://youtu.be/PrlJFfYQunU?t=112) [6 mins]
+4. [picoCTF - Programmers Assemble](https://www.youtube.com/watch?v=6BrbyCmc90s) [10 mins]

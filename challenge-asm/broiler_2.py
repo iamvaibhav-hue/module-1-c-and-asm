@@ -6,7 +6,7 @@ context.encoding = "latin"
 warnings.simplefilter("ignore")
 
 chall = os.path.basename(__file__).split('_')[1].split('.')[0]
-level = 2   #mention level: [1,5]
+level = 1  #mention level: [1,5]
 
 """"write your assembly code below"""
 assembly = """

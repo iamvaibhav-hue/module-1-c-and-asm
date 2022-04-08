@@ -263,7 +263,7 @@ class ASMBase:
     /'\\_   _/`\\
     \\___)=(___/
             """)
-        with open("flag1.txt", "r") as fp:
+        with open("flag.txt", "r") as fp:
             flag = fp.read()
             tux_say(flag)
 

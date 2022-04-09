@@ -111,5 +111,6 @@ Value in the first byte of instruction = opcode = 0x00
 ## Task
 
 You are given the file [emulator.c](emulator.c) with template code for solution of this challenge. You are supposed to fill in the parts where `UNIMPLEMENTED` is commented such that running the compiled emulator.c emulates the YoS processor's instructions. This will then print the flag. The char array `memory[256]` represents the state the RAM is in on booting up the processor. <br>
+<br>
 PS: It is not mandatory to use the given template code, you may creator your own YoS processor emulator from scratch.
 

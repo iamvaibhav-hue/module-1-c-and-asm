@@ -70,8 +70,8 @@ Value in the first byte of instruction = opcode = 0x00
 7. **JUMP_IF_NOT_ZERO** (JNZ)
 <br>opcode = 0x06
 <br>Usually, after the execution of an instruction, the processor 
-     moves on to execute the instuction stored next in memory. This
-     instruction modifies the control flow of the program based on 
+     moves on to execute the instuction stored next (adjacent) in memory. 
+     The JNZ instruction modifies the control flow of the program based on 
      the value of the register referenced by the second byte. If the
      value is not zero, the processor jumps to the byte referenced by
      the third byte of the instruction and starts reading and executing
@@ -110,5 +110,6 @@ Value in the first byte of instruction = opcode = 0x00
      
 ## Task
 
-
+You are given the file [emulator.c](emulator.c) with template code for solution of this challenge. You are supposed to fill in the parts where `UNIMPLEMENTED` is commented such that running the compiled emulator.c emulates the YoS processor's instructions. This will then print the flag. The char array `memory[256]` represents the state the RAM is in on booting up the processor. <br>
+PS: It is not mandatory to use the given template code, you may creator your own YoS processor emulator from scratch.
 

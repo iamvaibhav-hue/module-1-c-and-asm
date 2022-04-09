@@ -58,3 +58,17 @@ CS50 Introduction to C:
 2. [247 CTF - Impossible Number](https://www.youtube.com/watch?v=rFlEf2RrEtI) [4 min]
 3. [picoCTF - Assembly 1](https://youtu.be/PrlJFfYQunU?t=112) [6 mins]
 4. [picoCTF - Programmers Assemble](https://www.youtube.com/watch?v=6BrbyCmc90s) [10 mins]
+
+# Challenges
+
+We have designed 3 challenges:
+
+1. [challenge-asm](challenge-asm) [2 challenges in this folder]
+2. [emulator](emulator)
+
+All challenges are present in different folders of this
+repository. All in all, you would need to solve **atleast 2 challenges throughtout the module** but we encourage that you solve all of these, for things are more fun that way 😊.
+Make sure you go through the respective `README.md` files before jumping into the challenge. Have fun! 😁
+
+Discussions among mentees are encouraged and we request you to use our [Discord Server](https://discord.gg/nnpCPsUrYV) for the same.
+<p align="center">Created with :heart: by <a href="https://linktr.ee/csec.iitb">CSeC</a></p>

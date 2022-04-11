@@ -1,7 +1,7 @@
-# Module-1 Week-2.5+4 (C and Assembly)
+# Module-1 Part-3 (C and Assembly)
 
-Welcome to the last week of Module-1 of YoS!! <br>
-We will study **C programming** and **x86 assembly** for this week (and a half). <br>
+Welcome to the final part of Module-1 of YoS!! <br>
+Finally on to something cooler and sounds like hacking, we will study **C programming** and **x86 assembly** for this week (and a half more). <br>
 
 **C** is a general-purpose programming language like **Python**. **C** is compiled language, unlike Python, which is interpreted.
 The difference between compiled and interpreted languages is in their methods of execution. <br>
@@ -63,8 +63,8 @@ CS50 Introduction to C:
 
 We have designed 3 challenges:
 
+2. [emulator](emulator) [C programming challenge]
 1. [challenge-asm](challenge-asm) [2 challenges in this folder]
-2. [emulator](emulator)
 
 All challenges are present in different folders of this
 repository. All in all, you would need to solve **atleast 2 challenges throughtout the module** but we encourage that you solve all of these, for things are more fun that way 😊.

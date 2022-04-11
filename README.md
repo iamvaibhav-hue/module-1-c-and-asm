@@ -63,7 +63,7 @@ CS50 Introduction to C:
 
 We have designed 3 challenges:
 
-2. [emulator](emulator) [C programming challenge]
+1. [emulator](emulator) [C programming challenge]
 1. [challenge-asm](challenge-asm) [2 challenges in this folder]
 
 All challenges are present in different folders of this

@@ -26,10 +26,10 @@ C is one of the earliest programming languages but is still in use today. As we 
 
 ```
 NOTE : Do not worry if you don't understand all the details of C and Assembly right away.
-       A full understanding is very difficult to achieve in a week and an half. We have
-       two modules [Reverse Engineering and Binary Exploitation] coming up later which 
-       will deal with these topics again and you will surely have a clearer understanding
-       by then. This week's content aims to teach you just the very basics.
+       A complete understanding is challenging to achieve in a week and a half. We have
+       two modules [Reverse Engineering and Binary Exploitation] coming up later, which 
+       will deal with these topics again, and you will indeed have a clearer picture by
+       then. This week's content aims to teach you just the very basics.
 ```
 
 ### Introductory Videos

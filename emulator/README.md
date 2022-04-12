@@ -1,21 +1,25 @@
-# YoS Processor Emulator
+# YoS 9.11  Emulator
 
-YoS Processor is a 8-bit computer with 256 bytes of addressable "memory" (RAM). 
+YoS 9.11 is a 8-bit computer with 256 bytes of addressable "memory" (RAM). 
 On booting up, the processor sets the "instruction pointer" to the first byte of memory (address = 0x00) and 
 starts decoding and executing "instructions". All instructions are 3 bytes long and are described in detail below.
 There are 8 "registers" : r0, r1, ... r7 which temporarily hold data while the processor works. 
 Each register is 8 bits wide, meaning it can store values in the range [0, 255].
-
+<details>
+<summary></summary>
+https://i.postimg.cc/LXXJv2gd/t.jpg
+</details>
 
 ### Instructions
 
 Example : (note that all values we use from now on are in hexadecimal)
-```
-	  _ _ _ _ _ _ _ _ _ _ _ _
-	 |       |       |       |
-	 |  08   |  03   |   00  |
-	 |_ _ _ _|_ _ _ _|_ _ _ _|
-             |      |         |
+```                                 
+          _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+	 |       |       |       |       |
+	 |  08   |  03   |   00  |  . .  | . . . . 
+         |_ _ _ _|_ _ _ _|_ _ _ _|_ _ _ _|_ _ _ _
+             |      |         |       `----------- The next instruction to be run starts here (in most cases)
+	     |      |         | 
 	     |      `---------|--------- The second and third byte generally denote numerical constants 
              |                `--------- or the register(s) to use in executing an instrution
 	     |
@@ -112,5 +116,4 @@ Value in the first byte of instruction = opcode = 0x00
 
 You are given the file [emulator.c](emulator.c) with template code for solution of this challenge. You are supposed to fill in the parts where `UNIMPLEMENTED` is commented such that running the compiled emulator.c emulates the YoS processor's instructions. This will then print the flag. The char array `memory[256]` represents the state the RAM is in on booting up the processor. <br>
 <br>
-PS: It is not mandatory to use the given template code, you may creator your own YoS processor emulator from scratch.
-
+PS: It is not mandatory to use the given template code, you may creator your own YoS processor emulator from scratch too.

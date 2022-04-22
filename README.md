@@ -28,8 +28,8 @@ C is one of the earliest programming languages but is still in use today. As we 
 NOTE : Do not worry if you don't understand all the details of C and Assembly right away.
        A complete understanding is challenging to achieve in a week and a half. We have
        two modules [Reverse Engineering and Binary Exploitation] coming up later, which 
-       will deal with these topics again, and you will indeed have a clearer picture by
-       then. This week's content aims to teach you just the very basics.
+       will deal with these topics again, and you will have a much clearer picture by
+       then. This week's content aims to teach you only the very basics.
 ```
 
 ### Introductory Videos
@@ -61,13 +61,12 @@ CS50 Introduction to C:
 
 # Challenges
 
-We have designed 3 challenges:
+We have designed 3 challenges for this part:
 
 1. [emulator](emulator) [C programming challenge]
 1. [challenge-asm](challenge-asm) [2 challenges in this folder]
 
-All challenges are present in different folders of this
-repository. All in all, you would need to solve **atleast 2 challenges throughtout the module** but we encourage that you solve all of these, for things are more fun that way 😊.
+All in all, you would need to solve **atleast 2 challenges throughtout the module** but we encourage that you solve all of these, for things are more fun that way 😊.
 Make sure you go through the respective `README.md` files before jumping into the challenge. Have fun! 😁
 
 Discussions among mentees are encouraged and we request you to use our [Discord Server](https://discord.gg/nnpCPsUrYV) for the same.

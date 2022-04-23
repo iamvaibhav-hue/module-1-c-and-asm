@@ -16,7 +16,7 @@ Example : (note that all values we use from now on are in hexadecimal)
 ```                                 
           _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 	 |       |       |       |       |
-	 |  08   |  03   |   00  |  . .  | . . . . 
+	 |  08   |  03   |  00   |  . .  | . . . . 
          |_ _ _ _|_ _ _ _|_ _ _ _|_ _ _ _|_ _ _ _
              |      |         |       `----------- The next instruction to be run starts here (in most cases)
 	     |      |         | 
@@ -40,13 +40,13 @@ Value in the first byte of instruction = opcode = 0x00
 <br>This instruction adds the constant in the third byte of the 
      instruction to the register referenced by the second byte.
 <br>*Eg.* 01 00 80 => adds the constant 0x80 (= 128) to r0 (If the
-       value of the register was 0x01, it now changes to 0x81)
+       value of the register was 0x01, the new value would be 0x81)
 
 3. **SUB_CONST**
 <br>opcode = 0x02
 <br>This instruction subtracts the constant in the third byte of the 
      instruction to the register referenced by the second byte.
-<br>*Eg.* 02 00 80 => adds the constant 0x80 (= 128) to r0
+<br>*Eg.* 02 00 80 => subtracts the constant 0x80 (= 128) from r0
 
 4. **ADD**
 <br> opcode = 0x03
@@ -87,20 +87,20 @@ Value in the first byte of instruction = opcode = 0x00
 
 8. **JUMP_IF_ZERO** (JZ)
 <br>opcode = 0x07
-<br>Same, as JUMP_IF_NOT_ZERO but the jump happens only when the value 
+<br>Same, as JUMP_IF_NOT_ZERO but the jump instead happens when the value 
      stored in the register referred by the second byte is zero.
      
 9. **LOAD**
 <br>opcode = 0x08
 <br>This instruction loads the byte stored at the address specified by
-     the value in register reffered by the third byte of the instruction
+     the value in register referred by the third byte of the instruction
      to the register referred by the second byte.
 <br>*Eg.* 08 03 00 => If the value in r0 is 7, this instruction stores the
    value at address 7 in memory into r3 i.e. r3 = memory[7]
 
 10. **STORE**
 <br>opcode = 0x09
-<br>This instruction stores the value in the in register reffered by the 
+<br>This instruction stores the value in the register referred by the 
      third byte of the instruction to the memory location whose address 
      is given by the value of the register reffered by the second byte.
 <br>*Eg.* 09 03 00 => If the value in r3 is 4 and r0 is 7, this instruction
@@ -108,12 +108,11 @@ Value in the first byte of instruction = opcode = 0x00
 
 11. **HALT**
 <br>opcode = 0xff
-<br>This instruction halts the processor. The processor executes no new 
-     instructions after this.<br>
+<br>This instruction halts the processor. The processor is done for the day at this point.<br>
      
      
 ## Task
 
-You are given the file [emulator.c](emulator.c) with template code for solution of this challenge. You are supposed to fill in the parts where `UNIMPLEMENTED` is commented such that running the compiled emulator.c emulates the YoS processor's instructions. This will then print the flag. The char array `memory[256]` represents the state the RAM is in on booting up the processor. <br>
+You are given the file [emulator.c](emulator.c) with template code for the solution of this challenge. You are supposed to fill in the parts where `UNIMPLEMENTED` is commented such that running the compiled emulator.c emulates the YoS processor's instructions. This will then print the flag. The char array `memory[256]` represents the state the RAM is in on booting up the processor. <br>
 <br>
-PS: It is not mandatory to use the given template code, you may creator your own YoS processor emulator from scratch too.
+PS: It is not mandatory to use the given template code, you may create your own YoS processor emulator from scratch too.

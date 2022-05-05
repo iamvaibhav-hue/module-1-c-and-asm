@@ -343,6 +343,7 @@ if __name__=='__main__' :
     #exit(9)
 
     # test cases
+    np.random.seed(os.urandom(1) & 0x1F)
     samples = np.random.randint([LO]*NUM_INPUTS, [HI]*NUM_INPUTS)
     samples_out = list(map(fibonacci, samples))
 

@@ -65,9 +65,11 @@ We have designed 3 challenges for this part:
 
 1. [emulator](emulator) [C programming challenge]
 1. [challenge-asm](challenge-asm) [2 challenges in this folder]
+1. \*[challenge\_tail\_recursion](challenge_tail_recursion) [1 assembly challenge in this folder]
 
 All in all, you would need to solve **atleast 2 challenges throughtout the module** but we encourage that you solve all of these, for things are more fun that way 😊.
 Make sure you go through the respective `README.md` files before jumping into the challenge. Have fun! 😁
+<sub><sup><span style="opacity: 0.0;">\* Solving this challenge successfully makes you eligible for one free treat from Owl-A</span></sup></sub>
 
 Discussions among mentees are encouraged and we request you to use our [Discord Server](https://discord.gg/nnpCPsUrYV) for the same.
 <p align="center">Created with :heart: by <a href="https://linktr.ee/csec.iitb">CSeC</a></p>

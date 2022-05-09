@@ -65,7 +65,7 @@ We have designed 3 challenges for this part:
 
 1. [emulator](emulator) [C programming challenge]
 1. [challenge-asm](challenge-asm) [2 challenges in this folder]
-1. \*[challenge\_tail\_recursion](challenge_tail_recursion) [1 assembly challenge in this folder]
+1. \*[challenge\_tail\_recursion](challenge_tail_recursion) [1 assembly challenge in this folder] <font style="color:red">Note that you must use unicorn Version: 2.0.0rc7 for running this locally because other unicorn versions seem to behave differently for some reason! </font>
 
 <sub><sup>\* Solving this challenge successfully makes you eligible for one free treat from Owl-A</sup></sub>
 

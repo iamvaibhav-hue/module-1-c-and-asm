@@ -23,7 +23,7 @@ HI = 95
 NUM_INPUTS = 10
 #LO = 3
 #HI = 10
-#NUM_INPUTS = 10
+#NUM_INPUTS = 2
 
 mu = None
 hooks = []
@@ -343,7 +343,7 @@ if __name__=='__main__' :
     #exit(9)
 
     # test cases
-    np.random.seed(os.urandom(1) & 0x1F)
+    np.random.seed(ord(os.urandom(1)) & 0x1F)
     samples = np.random.randint([LO]*NUM_INPUTS, [HI]*NUM_INPUTS)
     samples_out = list(map(fibonacci, samples))
 

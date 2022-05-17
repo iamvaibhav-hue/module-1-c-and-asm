@@ -8,11 +8,7 @@ import struct
 import re
 
 from debug import *
-
-log_level='DEBUG'
-context.arch = 'x86_64'
-context.bits = 64
-
+#from constants import *
 LONG_LEN = 8
 CTR = 0
 
@@ -21,15 +17,15 @@ CTR = 0
 LO = 50
 HI = 95
 NUM_INPUTS = 10
-#LO = 3
-#HI = 10
-#NUM_INPUTS = 2
+LO = 3
+HI = 4
+NUM_INPUTS = 1
 
 mu = None
 hooks = []
 allowed_registers = set(['rdi', 'rax', 'rbp', 'rsp'])
 # call to only fib function are also allowed
-filter_list = ['int3', 'int', 'nop', 'mov', 'add', 'sub', 'push', 'pop']
+filter_list = ['int3', 'int', 'nop', 'mov', 'add', 'sub', 'xor', 'and', 'or', 'shl', 'shr', 'push', 'pop']
 sandbox = False
 samples = []
 samples_out = []
@@ -68,9 +64,9 @@ def eliminate (reg: str) :
 def fibonacci(n: int) :
     """
     calculates the fibonacci of an integer n
-    fibonacci series : { 0:1, 1:1, 2:2, 3:3, 4:5, 6:8, 7:13, ...}
+    fibonacci series : { 1:1, 2:1, 3:2, 4:3, 5:5, 6:8, 7:13, ...}
     """
-    a_0 = 1
+    a_0 = 0
     a_1 = 1
     for _ in range(0,n):
         a_0 += a_1
@@ -191,6 +187,9 @@ def handle_INT(uc, intno, user_data) :
                 emu_err = "fail: Wrong answer? interesting... get'em out of 'ere!"
                 print("fail: Wrong answer? interesting... get'em out of 'ere!")
                 uc.emu_stop()
+                debug(f"QUERY         : {samples[curr]}")
+                debug(f"VALUE         : {val}")
+                debug(f"ACTUAL OUTPUT : {samples_out[curr]}")
                 return
 
         debug(f"CTR: {CTR}")
@@ -204,8 +203,6 @@ def handle_INT(uc, intno, user_data) :
         if CTR < NUM_INPUTS :
         #uc.reg_write(UC_X86_REG_RIP, uc.reg_read(UC_X86_REG_RIP) + 2)
             debug(f"QUERY         : {samples[curr]}")
-            debug(f"VALUE         : {val}")
-            debug(f"ACTUAL OUTPUT : {samples_out[curr]}")
             debug(f"VALUE         : {val}")
             debug(f"ACTUAL OUTPUT : {samples_out[curr]}")
         return

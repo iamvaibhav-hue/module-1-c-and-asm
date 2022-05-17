@@ -200,7 +200,7 @@ def handle_INT(uc, intno, user_data) :
         #uc.reg_write(UC_X86_REG_RAX, struct.unpack("<Q", uc.mem_read(stack_ptr, LONG_LEN))[0])
 
         ret = None
-        if v < 2 :
+        if v <= 2 :
             ret = uc.mem_read(stack_ptr, LONG_LEN)
             ret = struct.unpack("<Q", ret)[0]
             uc.reg_write(UC_X86_REG_RAX, 1)

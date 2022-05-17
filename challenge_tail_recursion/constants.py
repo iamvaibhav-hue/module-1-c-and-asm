@@ -5,12 +5,12 @@ CTR = 0
 
 # HI and LO control the range of test input with implied meanings.
 # NUM_INPUTS is the number of test cases.
-LO = 50
-HI = 95
+LO = 14
+HI = 30
 NUM_INPUTS = 10
-LO = 3
-HI = 7
-NUM_INPUTS = 2
+#LO = 3
+#HI = 7
+#NUM_INPUTS = 10
 
 mu = None
 hooks = []

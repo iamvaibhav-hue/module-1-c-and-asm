@@ -8,9 +8,9 @@ CTR = 0
 LO = 14
 HI = 30
 NUM_INPUTS = 10
-#LO = 3
-#HI = 7
-#NUM_INPUTS = 10
+#LO = 5
+#HI = 10
+#NUM_INPUTS = HI - LO + 1
 
 mu = None
 hooks = []

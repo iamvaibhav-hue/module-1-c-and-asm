@@ -10,6 +10,6 @@ Running `python3 emulator.py` without any arguments ends up reading the `fib.S`;
 
 Setting the [enivornment variable](https://en.wikipedia.org/wiki/Environment_variable) `DEBUG` with the value `"yes"` would allow you to debug your script by providing you additional information.
 
-The **real** flag can be obtained by connecting to the server using `nc cybersecclub.cse.iitb.ac.in 5000` with IITBVPN; and then submitting your assembly input followed by a `$` on a new line.
+The **real** flag can be obtained by connecting to the server using `nc cybersecclub.cse.iitb.ac.in 5000` with IITBVPN; and then submitting your assembly input followed by a `$` on a new line. It will take a while to execute, possibly a minute or two, so be patient!
 
 You needn't try to understand any of the `.py` files or the `template.S` file. Upload your final solution script in [solve.py](solve.py) along with the correct flag.

@@ -268,26 +268,31 @@ if __name__=='__main__' :
     #print((2<<64)-1)
     #exit(42)
 
-    # setup
+    # submission
+    if len(sys.argv) >= 2 :
+        if sys.argv[1] == '-':
+            fib_code = ''
+            while True:
+                x = input()
+                if (x.strip() == END_MARKER):
+                    break
+                fib_code += x
+        else:
+            f = open(sys.argv[1], 'r')
+            fib_code = f.read()
+            f.close()
+    else:
+        f = open(fib_file, 'r')
+        fib_code = f.read()
+        f.close()
+
+        # setup
     f = open(template, 'r')
     code = f.read()
     f.close()
 
     code = re.sub(r'@NUM_INPUTS', str(NUM_INPUTS), code)
-
-    f = open(fib_file, 'r')
-    fib_code = f.read()
-    f.close()
-
-    # submission
-    if len(sys.argv) >= 2 :
-        if sys.argv[1] == '-':
-            fib_code = sys.stdin.read()
-        else:
-            f = open(sys.argv[1], 'r')
-            fib_code = f.read()
-            f.close()
-
+    
     #print(fib_code)
 
     # get offsets

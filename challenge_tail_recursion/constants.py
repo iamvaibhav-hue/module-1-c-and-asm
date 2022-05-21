@@ -39,3 +39,5 @@ INT7_trav = False
 
 restricted = ['real10', 'real8', 'real4', 'tbyte', 'qword', 'fword', 'dword', 'sdword', 'word', 'sword', 'byte', 'sbyte', 'ptr']
 shadow_stack = []
+
+END_MARKER = '$'

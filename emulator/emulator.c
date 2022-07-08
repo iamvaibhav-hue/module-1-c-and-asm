@@ -1,6 +1,6 @@
-##include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
-
+//flag{s0_s3cr3t_y3t_s0_fr33}
 // checks if a valid register is accessed (by testing if op < 8)
 // exits if op >= 8 as it makes the instruction illegal
 void check_index(unsigned char op)

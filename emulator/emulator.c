@@ -1,8 +1,8 @@
-#include <stdio.h>
+##include <stdio.h>
 #include <stdlib.h>
 
 // checks if a valid register is accessed (by testing if op < 8)
-// exits if op >= 8 as it makes the instruction illegald dfsfafsafwfewfsdfafd
+// exits if op >= 8 as it makes the instruction illegal
 void check_index(unsigned char op)
 {
 	if(op < 8) {
@@ -50,39 +50,65 @@ int main ()
 			case 0x00:
 				check_index(op1);
 				// UNIMPLEMENTED
+				registers[op1]=op2;
+                                break;
 			case 0x01:
 				check_index(op1);
-				// UNIMPLEMENTED
+				registers[op1]=op2 + registers[op1];
+				break;
+
+                                // UNIMPLEMENTED
 			case 0x02:
 				check_index(op1);
+				registers[op1]=registers[op1]-op2;break;
+
 				// UNIMPLEMENTED
 			case 0x03:
 				check_index(op1);
 				check_index(op2);
+				registers[op1]= registers[op1]+registers[op2];break;
+
 				// UNIMPLEMENTED
 			case 0x04:
 				check_index(op1);
 				check_index(op2);
+				registers[op1]= registers[op1]-registers[op2];break;
+
 				// UNIMPLEMENTED
 			case 0x05:
 				check_index(op1);
+				printf("%c",registers[op1]);break;
+
 				// UNIMPLEMENTED
 			case 0x06:
 				check_index(op1);
+                                if(registers[op1]!=0)
+                                {instruction_pointer=op2;}
+                          	break;
+			
 				// UNIMPLEMENTED
 			case 0x07:
 				check_index(op1);
-				// UNIMPLEMENTED
+                                if(registers[op1]==0)
+                                {instruction_pointer=op2;}
+
+				break;
+// UNIMPLEMENTED
 			case 0x08:
 				check_index(op1);
 				check_index(op2);
-				// UNIMPLEMENTED
+				registers[op1]= memory[registers[op2]];
+				break;
+// UNIMPLEMENTED
 			case 0x09:
 				check_index(op1);
 				check_index(op2);
-				// UNIMPLEMENTED
+                                memory[registers[op1]]=registers[op2];
+				break;
+
 			case 0xff:
 				// UNIMPLEMENTED
+				break;
 			default:
 				printf("Illegal instruction\n");
 				return -1;

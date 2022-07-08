@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 // checks if a valid register is accessed (by testing if op < 8)
-// exits if op >= 8 as it makes the instruction illegal
+// exits if op >= 8 as it makes the instruction illegald dfsfafsafwfewfsdfafd
 void check_index(unsigned char op)
 {
 	if(op < 8) {
